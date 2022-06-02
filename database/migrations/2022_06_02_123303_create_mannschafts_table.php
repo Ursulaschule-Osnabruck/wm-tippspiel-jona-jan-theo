@@ -16,7 +16,7 @@ class CreateMannschaftsTable extends Migration
         Schema::create('mannschafts', function (Blueprint $table) {
             $table->id();
             $table->country()
-
+            $table->picture()
             $table->timestamps();
         });
     }
