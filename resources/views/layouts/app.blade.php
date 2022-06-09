@@ -40,10 +40,10 @@
                 </ul>
                 <form class="container-fluid justify-content-start">
                     @guest
-                        <button class="btn btn-outline-success me-2" type="button" style="float: right" href="/login">LogIn</button>
+                        <a class="btn btn-success" href="{{ url('login') }}" role="button" style="float: right;">Login</a>
                     @endguest
                     @auth
-                        <button class="btn btn-outline-secondary" type="button" style="float: right">LogOut</button>
+                        <a class="btn btn-danger" role="button" style="float: right;">LogOut</a>
                     @endauth
                 </form>
                 </div>
