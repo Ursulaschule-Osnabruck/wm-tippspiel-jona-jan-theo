@@ -62,6 +62,9 @@
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
+
+                                <button type="button" class="btn btn-secondary">Register</button>
+
                             </div>
                         </div>
                     </form>

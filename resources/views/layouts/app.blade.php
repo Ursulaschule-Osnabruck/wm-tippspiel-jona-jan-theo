@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{{ url('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -40,7 +40,7 @@
                 </ul>
                 <form class="container-fluid justify-content-start">
                     @guest
-                        <button class="btn btn-outline-success me-2" type="button" style="float: right">LogIn</button>
+                        <button class="btn btn-outline-success me-2" type="button" style="float: right" href="/login">LogIn</button>
                     @endguest
                     @auth
                         <button class="btn btn-outline-secondary" type="button" style="float: right">LogOut</button>

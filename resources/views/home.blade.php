@@ -53,7 +53,7 @@
                             </div>
                             <div class="col-6">
                                 <form>
-                                    <input type="number" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="GER-Tipp">
+                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="GER-Tipp">
                                 </form>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                             </div>
                             <div class="col-6">
                                 <form>
-                                    <input type="number" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="DEN-Tipp">
+                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="DEN-Tipp">
                                 </form>
                             </div>
                         </div>
@@ -80,7 +80,7 @@
                             </div>
                             <div class="col-6">
                                 <form>
-                                    <input type="number" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="ESP-Tipp">
+                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="ESP-Tipp">
                                 </form>
                             </div>
                         </div>
@@ -92,7 +92,7 @@
                             </div>
                             <div class="col-6">
                                 <form>
-                                    <input type="number" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="BEL-Tipp">
+                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="BEL-Tipp">
                                 </form>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                             </div>
                             <div class="col-6">
                                 <form>
-                                    <input type="number" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="FRA-Tipp">
+                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="FRA-Tipp">
                                 </form>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                             </div>
                             <div class="col-6">
                                 <form>
-                                    <input type="number" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="GEB-Tipp">
+                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="GEB-Tipp">
                                 </form>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                 </tr>
             </tbody>
             </table>
-            <button type="button" class="btn btn-success">Commit</button>
+            <button type="button" class="btn btn-success" style="margin: 0 auto; display: block;">Commit</button>
         </div>
 
     </div>
