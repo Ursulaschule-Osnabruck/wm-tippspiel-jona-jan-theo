@@ -18,7 +18,7 @@ class CreateMannschaftsTable extends Migration
             $table->string('Name');
             $table->string('Flagge');
             $table->string('Siege');
-            $table->string('Verluste')
+            $table->string('Verluste');
         });
     }
 
