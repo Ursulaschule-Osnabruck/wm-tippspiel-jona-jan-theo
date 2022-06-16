@@ -13,11 +13,12 @@ class CreateMannschaftsTable extends Migration
      */
     public function up()
     {
-        Schema::create('mannschafts', function (Blueprint $table) {
+        Schema::create('mannschaft', function (Blueprint $table) {
             $table->id();
-            $table->country()
-            $table->picture()
-            $table->timestamps();
+            $table->string('Name');
+            $table->string('Flagge');
+            $table->string('Siege');
+            $table->string('Verluste')
         });
     }
 
@@ -28,6 +29,6 @@ class CreateMannschaftsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mannschafts');
+        Schema::dropIfExists('mannschaft');
     }
 }
