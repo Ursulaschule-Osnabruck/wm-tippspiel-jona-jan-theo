@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ url('home') }}">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -43,7 +43,7 @@
                         <a class="btn btn-success" href="{{ url('login') }}" role="button" style="float: right;">Login</a>
                     @endguest
                     @auth
-                        <a class="btn btn-danger" role="button" style="float: right;">LogOut</a>
+                        <a class="btn btn-danger" role="button" style="float: right;" href="{{ url('/logout') }}">LogOut</a>
                     @endauth
                 </form>
                 </div>
