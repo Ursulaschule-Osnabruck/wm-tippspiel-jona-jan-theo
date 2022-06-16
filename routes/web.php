@@ -22,6 +22,7 @@ Route::get('home', function () {
 });
 
 
+
 Auth::routes();
 
 
