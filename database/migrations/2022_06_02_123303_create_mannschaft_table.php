@@ -16,7 +16,7 @@ class CreateMannschaftsTable extends Migration
         Schema::create('mannschaft', function (Blueprint $table) {
             $table->id();
             $table->string('Name');
-            $table->string('Kürzel')
+            $table->string('Fifa Ländercode')
             $table->string('Flagge');
             $table->string('Siege');
             $table->string('Verluste');
