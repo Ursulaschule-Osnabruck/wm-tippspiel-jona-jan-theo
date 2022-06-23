@@ -63,7 +63,7 @@
                                     </a>
                                 @endif
 
-                                <button type="button" class="btn btn-secondary">Register</button>
+                                <a class="btn btn-secondary" href="{{ url('register') }}" role="button">Create Acc.</a>
 
                             </div>
                         </div>

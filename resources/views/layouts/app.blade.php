@@ -16,6 +16,8 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -25,14 +27,14 @@
 
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Tippspiel</a>
+                <a class="navbar-brand" href="#"><i class="fa fa-soccer-ball-o"></i> Tippspiel</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ url('home') }}">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -43,7 +45,7 @@
                         <a class="btn btn-success" href="{{ url('login') }}" role="button" style="float: right;">Login</a>
                     @endguest
                     @auth
-                        <a class="btn btn-danger" role="button" style="float: right;">LogOut</a>
+                        <a class="btn btn-danger" role="button" style="float: right;" href="{{ url('/logout') }}">LogOut</a>
                     @endauth
                 </form>
                 </div>
