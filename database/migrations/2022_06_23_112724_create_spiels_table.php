@@ -17,7 +17,13 @@ class CreateSpielsTable extends Migration
             $table->id();
 
             // uhrzeit datum heimteam gastteam toreheim toregast ort
-
+            $table->string('Uhrzeit');
+            $table->string('Datum');
+            $table->string('Geimteam');
+            $table->string('Gastteam');
+            $table->string('Heimpunkte');
+            $table->string('Gastpunkte');
+            $table->string('Ort');
             $table->timestamps();
         });
     }
