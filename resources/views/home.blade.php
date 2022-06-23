@@ -44,6 +44,7 @@
                 <tr>
                 <th scope="col">Heim</th>
                 <th scope="col">Tipp</th>
+                <th scope="col">Ergebnis</th>
                 <th scope="col">Auswärts</th>
                 <th scope="col">Datum</th>
                 <th scope="col">Anpfiff</th>
@@ -73,6 +74,10 @@
                         </div>
                     </div>
                     </td>
+                    <td>
+                       <i> 0:0</i>
+                    </td>
+                    
                     <td>
                         <div class="row">
                             <div class="col-6">
@@ -108,6 +113,9 @@
                     </div>
                     </td>
                     <td>
+                       <i> 0:0</i>
+                    </td>
+                    <td>
                         <div class="row">
                             <div class="col-6">
                                Ecuador
@@ -140,6 +148,9 @@
                                 </form>
                         </div>
                     </div>
+                    </td>
+                    <td>
+                        <i>0:0</i>
                     </td>
                     <td>
                         <div class="row">
@@ -176,6 +187,8 @@
                     </div>
                     </td>
                     <td>
+                        <i>0:0</i>
+                    <td>
                         <div class="row">
                             <div class="col-6">
                                Ecuador
@@ -210,6 +223,9 @@
                     </div>
                     </td>
                     <td>
+                        <i>0:0</i>
+                    </td>
+                    <td>
                         <div class="row">
                             <div class="col-6">
                                Katar
@@ -242,6 +258,9 @@
                                 </form>
                         </div>
                     </div>
+                    </td>
+                    <td>
+                        <i>0:0</i>
                     </td>
                     <td>
                         <div class="row">
