@@ -21,6 +21,9 @@ Route::get('home', function () {
     return view('home');
 });
 
+Route::get('spielplan', function () {
+    return view('spielplan');
+});
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
