@@ -34,12 +34,9 @@
         </div>
 
         <div class="col-6">
-            
+            <h1>Kommende Spiele:</h1>
             <table class="table table-striped table-bordered">
             <thead>
-                <tr> 
-                    <th scope="col">Gruppe A</th>
-                </tr>
                 <tr>
                 <th scope="col">Heim</th>
                 <th scope="col">Tipp</th>
