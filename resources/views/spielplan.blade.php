@@ -271,8 +271,6 @@
 
 
             
-            
-            <button type="button" class="btn btn-success" style="margin: 0 auto; display: block;">Commit</button>
         </div>
 
     </div>
