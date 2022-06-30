@@ -17,7 +17,7 @@ use App\Models\User;
 */
 
 Route::get('/', function () {
-    $spiele = Spiel::first();
+    $spiele = Spiel::paginate(6);
     $mannschaften = Mannschaft::all();
 
     $sortedUser = collect(User::all())->sortBy('punkte')->toArray();

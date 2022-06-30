@@ -38,11 +38,12 @@
                 </tr>
             </thead>
             <tbody>
+            @for ($i = 0; $i < count($res['spiele']); $i++)
                 <tr>
                     <td>
                         <div class="row">
                             <div class="col-6">
-                                {{ $res['mannschaften'][$res['spiele']->heim_id - 1]->Name }}
+                                {{ $res['mannschaften'][$res['spiele'][$i]->heim_id - 1]->Name }}
                             </div>
                            
                         </div>
@@ -51,12 +52,12 @@
                     <div class="row">
                         <div class="col-6">
                                 <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="{{ $res['mannschaften'][$res['spiele']->heim_id - 1]->Code }}">
+                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="{{ $res['mannschaften'][$res['spiele'][$i]->heim_id - 1]->Code }}">
                                 </form>
                         </div>
                         <div class="col-6">
                                 <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="{{ $res['mannschaften'][$res['spiele']->gast_id - 1]->Code }}">
+                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="{{ $res['mannschaften'][$res['spiele'][$i]->gast_id - 1]->Code }}">
                                 </form>
                         </div>
                     </div>
@@ -65,21 +66,23 @@
                     <td>
                         <div class="row">
                             <div class="col-6">
-                            {{ $res['mannschaften'][$res['spiele']->gast_id - 1]->Name }}
+                            {{ $res['mannschaften'][$res['spiele'][$i]->gast_id - 1]->Name }}
                             </div>
    
                         </div>
                     </td>
-                    <td>{{ $res['spiele']->spielzeit }}</td>
+                    <td>{{ $res['spiele'][$i]->spielzeit }}</td>
                 </tr>
+            @endfor
             </tbody>
             </table>
 
 
 
             
-            
+            @auth
             <button type="button" class="btn btn-success" style="margin: 0 auto; display: block;">Commit</button>
+            @endauth
         </div>
 
     </div>
