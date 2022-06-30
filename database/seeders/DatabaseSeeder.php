@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use App\Models\Mannschafts;
+use App\Models\Mannschaft;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,45 +16,45 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
- DB::table('mannschafts')->insert(['Name'=>'Katar', 'Code'=>'QAT', 'Flagge'=>'ger.png', 'group'=>'A']);
-        DB::table('mannschafts')->insert(['Name'=>'Ecuador', 'Code'=>'ECU', 'Flagge'=>'ger.png', 'group'=>'A']);
-        DB::table('mannschafts')->insert(['Name'=>'Senegal', 'Code'=>'SEN', 'Flagge'=>'ger.png', 'group'=>'A']);
-        DB::table('mannschafts')->insert(['Name'=>'Niederlande', 'Code'=>'NED', 'Flagge'=>'ger.png', 'group'=>'A']);
+ DB::table('mannschaft')->insert(['Name'=>'Katar', 'Code'=>'QAT', 'Flagge'=>'ger.png', 'group'=>'A']);
+        DB::table('mannschaft')->insert(['Name'=>'Ecuador', 'Code'=>'ECU', 'Flagge'=>'ger.png', 'group'=>'A']);
+        DB::table('mannschaft')->insert(['Name'=>'Senegal', 'Code'=>'SEN', 'Flagge'=>'ger.png', 'group'=>'A']);
+        DB::table('mannschaft')->insert(['Name'=>'Niederlande', 'Code'=>'NED', 'Flagge'=>'ger.png', 'group'=>'A']);
 
-        DB::table('mannschafts')->insert(['Name'=>'England', 'Code'=>'ENG', 'Flagge'=>'ger.png', 'group'=>'B']);
-        DB::table('mannschafts')->insert(['Name'=>'Iran', 'Code'=>'IRN', 'Flagge'=>'ger.png', 'group'=>'B']);
-        DB::table('mannschafts')->insert(['Name'=>'USA', 'Code'=>'USA', 'Flagge'=>'ger.png', 'group'=>'B']);
-        DB::table('mannschafts')->insert(['Name'=>'Wales', 'Code'=>'WAL', 'Flagge'=>'ger.png', 'group'=>'B']);
+        DB::table('mannschaft')->insert(['Name'=>'England', 'Code'=>'ENG', 'Flagge'=>'ger.png', 'group'=>'B']);
+        DB::table('mannschaft')->insert(['Name'=>'Iran', 'Code'=>'IRN', 'Flagge'=>'ger.png', 'group'=>'B']);
+        DB::table('mannschaft')->insert(['Name'=>'USA', 'Code'=>'USA', 'Flagge'=>'ger.png', 'group'=>'B']);
+        DB::table('mannschaft')->insert(['Name'=>'Wales', 'Code'=>'WAL', 'Flagge'=>'ger.png', 'group'=>'B']);
 
-        DB::table('mannschafts')->insert(['Name'=>'Argentinien', 'Code'=>'ARG', 'Flagge'=>'ger.png', 'group'=>'C']);
-        DB::table('mannschafts')->insert(['Name'=>'Saudi-Arabien', 'Code'=>'KSA', 'Flagge'=>'ger.png', 'group'=>'C']);
-        DB::table('mannschafts')->insert(['Name'=>'Mexiko', 'Code'=>'MEX', 'Flagge'=>'ger.png', 'group'=>'C']);
-        DB::table('mannschafts')->insert(['Name'=>'Polen', 'Code'=>'POL', 'Flagge'=>'ger.png', 'group'=>'C']);
+        DB::table('mannschaft')->insert(['Name'=>'Argentinien', 'Code'=>'ARG', 'Flagge'=>'ger.png', 'group'=>'C']);
+        DB::table('mannschaft')->insert(['Name'=>'Saudi-Arabien', 'Code'=>'KSA', 'Flagge'=>'ger.png', 'group'=>'C']);
+        DB::table('mannschaft')->insert(['Name'=>'Mexiko', 'Code'=>'MEX', 'Flagge'=>'ger.png', 'group'=>'C']);
+        DB::table('mannschaft')->insert(['Name'=>'Polen', 'Code'=>'POL', 'Flagge'=>'ger.png', 'group'=>'C']);
 
-        DB::table('mannschafts')->insert(['Name'=>'Frankreich', 'Code'=>'FRA', 'Flagge'=>'ger.png', 'group'=>'D']);
-        DB::table('mannschafts')->insert(['Name'=>'Australien', 'Code'=>'AUS', 'Flagge'=>'ger.png', 'group'=>'D']);
-        DB::table('mannschafts')->insert(['Name'=>'Dänemark', 'Code'=>'DEN', 'Flagge'=>'ger.png', 'group'=>'D']);
-        DB::table('mannschafts')->insert(['Name'=>'Tunesien', 'Code'=>'TUN', 'Flagge'=>'ger.png', 'group'=>'D']);
+        DB::table('mannschaft')->insert(['Name'=>'Frankreich', 'Code'=>'FRA', 'Flagge'=>'ger.png', 'group'=>'D']);
+        DB::table('mannschaft')->insert(['Name'=>'Australien', 'Code'=>'AUS', 'Flagge'=>'ger.png', 'group'=>'D']);
+        DB::table('mannschaft')->insert(['Name'=>'Dänemark', 'Code'=>'DEN', 'Flagge'=>'ger.png', 'group'=>'D']);
+        DB::table('mannschaft')->insert(['Name'=>'Tunesien', 'Code'=>'TUN', 'Flagge'=>'ger.png', 'group'=>'D']);
 
-        DB::table('mannschafts')->insert(['Name'=>'Spanien', 'Code'=>'ESP', 'Flagge'=>'ger.png', 'group'=>'E']);
-        DB::table('mannschafts')->insert(['Name'=>'Costa Rica', 'Code'=>'CRC', 'Flagge'=>'ger.png', 'group'=>'E']);
-        DB::table('mannschafts')->insert(['Name'=>'Deutschland', 'Code'=>'GER', 'Flagge'=>'ger.png', 'group'=>'E']);
-        DB::table('mannschafts')->insert(['Name'=>'Japan', 'Code'=>'JPN', 'Flagge'=>'ger.png', 'group'=>'E']);
+        DB::table('mannschaft')->insert(['Name'=>'Spanien', 'Code'=>'ESP', 'Flagge'=>'ger.png', 'group'=>'E']);
+        DB::table('mannschaft')->insert(['Name'=>'Costa Rica', 'Code'=>'CRC', 'Flagge'=>'ger.png', 'group'=>'E']);
+        DB::table('mannschaft')->insert(['Name'=>'Deutschland', 'Code'=>'GER', 'Flagge'=>'ger.png', 'group'=>'E']);
+        DB::table('mannschaft')->insert(['Name'=>'Japan', 'Code'=>'JPN', 'Flagge'=>'ger.png', 'group'=>'E']);
 
-        DB::table('mannschafts')->insert(['Name'=>'Belgien', 'Code'=>'BEL', 'Flagge'=>'ger.png', 'group'=>'F']);
-        DB::table('mannschafts')->insert(['Name'=>'Kanada', 'Code'=>'CAN', 'Flagge'=>'ger.png', 'group'=>'F']);
-        DB::table('mannschafts')->insert(['Name'=>'Marokko', 'Code'=>'MAR', 'Flagge'=>'ger.png', 'group'=>'F']);
-        DB::table('mannschafts')->insert(['Name'=>'Kroatien', 'Code'=>'CRO', 'Flagge'=>'ger.png', 'group'=>'F']);
+        DB::table('mannschaft')->insert(['Name'=>'Belgien', 'Code'=>'BEL', 'Flagge'=>'ger.png', 'group'=>'F']);
+        DB::table('mannschaft')->insert(['Name'=>'Kanada', 'Code'=>'CAN', 'Flagge'=>'ger.png', 'group'=>'F']);
+        DB::table('mannschaft')->insert(['Name'=>'Marokko', 'Code'=>'MAR', 'Flagge'=>'ger.png', 'group'=>'F']);
+        DB::table('mannschaft')->insert(['Name'=>'Kroatien', 'Code'=>'CRO', 'Flagge'=>'ger.png', 'group'=>'F']);
 
-        DB::table('mannschafts')->insert(['Name'=>'Brasilien', 'Code'=>'BRA', 'Flagge'=>'ger.png', 'group'=>'G']);
-        DB::table('mannschafts')->insert(['Name'=>'Serbien', 'Code'=>'SRB', 'Flagge'=>'ger.png', 'group'=>'G']);
-        DB::table('mannschafts')->insert(['Name'=>'Schweiz', 'Code'=>'SUI', 'Flagge'=>'ger.png', 'group'=>'G']);
-        DB::table('mannschafts')->insert(['Name'=>'Kamerun', 'Code'=>'CMR', 'Flagge'=>'ger.png', 'group'=>'G']);
+        DB::table('mannschaft')->insert(['Name'=>'Brasilien', 'Code'=>'BRA', 'Flagge'=>'ger.png', 'group'=>'G']);
+        DB::table('mannschaft')->insert(['Name'=>'Serbien', 'Code'=>'SRB', 'Flagge'=>'ger.png', 'group'=>'G']);
+        DB::table('mannschaft')->insert(['Name'=>'Schweiz', 'Code'=>'SUI', 'Flagge'=>'ger.png', 'group'=>'G']);
+        DB::table('mannschaft')->insert(['Name'=>'Kamerun', 'Code'=>'CMR', 'Flagge'=>'ger.png', 'group'=>'G']);
 
-        DB::table('mannschafts')->insert(['Name'=>'Portugal', 'Code'=>'POR', 'Flagge'=>'ger.png', 'group'=>'H']);
-        DB::table('mannschafts')->insert(['Name'=>'Ghana', 'Code'=>'GHA', 'Flagge'=>'ger.png', 'group'=>'H']);
-        DB::table('mannschafts')->insert(['Name'=>'Uruguay', 'Code'=>'URU', 'Flagge'=>'ger.png', 'group'=>'H']);
-        DB::table('mannschafts')->insert(['Name'=>'Südkorea', 'Code'=>'KOR', 'Flagge'=>'ger.png', 'group'=>'H']);
+        DB::table('mannschaft')->insert(['Name'=>'Portugal', 'Code'=>'POR', 'Flagge'=>'ger.png', 'group'=>'H']);
+        DB::table('mannschaft')->insert(['Name'=>'Ghana', 'Code'=>'GHA', 'Flagge'=>'ger.png', 'group'=>'H']);
+        DB::table('mannschaft')->insert(['Name'=>'Uruguay', 'Code'=>'URU', 'Flagge'=>'ger.png', 'group'=>'H']);
+        DB::table('mannschaft')->insert(['Name'=>'Südkorea', 'Code'=>'KOR', 'Flagge'=>'ger.png', 'group'=>'H']);
 
 
 
