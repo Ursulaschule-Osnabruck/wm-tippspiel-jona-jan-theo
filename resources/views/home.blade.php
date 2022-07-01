@@ -35,6 +35,7 @@
                 <th scope="col">Tipp</th>
                 <th scope="col">Gast</th>
                 <th scope="col">Datum</th>
+                <th scope="col">Ort</th>
                 </tr>
             </thead>
             <tbody>
@@ -72,6 +73,7 @@
                         </div>
                     </td>
                     <td>{{ $res['spiele'][$i]->spielzeit }}</td>
+                    <td>{{ $res['spiele'][$i]->spielort }}</td>
                 </tr>
             @endfor
             </tbody>
