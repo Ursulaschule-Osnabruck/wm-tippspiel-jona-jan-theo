@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Spiel;
+use App\Models\Mannschaft;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +17,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $spiele = Spiel::paginate(6);
+    $mannschaften = Mannschaft::all();
+
+    $sortedUser = collect(User::all())->sortBy('punkte')->toArray();
+    //dd($sortedUser);
+
+    $res = array(
+        'spiele' => $spiele,
+        'mannschaften' => $mannschaften,
+        'sortedUser' => $sortedUser,
+    );
+
+    return view('home', ['res' => $res]);
 });
 
 Route::get('home', function () {

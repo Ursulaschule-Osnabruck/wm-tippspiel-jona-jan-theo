@@ -13,7 +13,7 @@ class CreateMannschaftsTable extends Migration
      */
     public function up()
     {
-        Schema::create('mannschaft', function (Blueprint $table) {
+        Schema::create('mannschafts', function (Blueprint $table) {
             $table->id();
             $table->string('Name');
             $table->string('Code');

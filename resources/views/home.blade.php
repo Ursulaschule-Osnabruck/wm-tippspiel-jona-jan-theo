@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-6">
-            Platzierungen:
+            <h1>Platzierungen:</h1>
             <table class="table table-striped table-bordered">
             <thead>
                 <tr>
@@ -14,21 +14,14 @@
                 </tr>
             </thead>
             <tbody>
+
+            @for ($i = 0; $i < count($res['sortedUser']); $i++)
                 <tr>
-                <th scope="row">1</th>
-                <td>Theo</td>
-                <td>666</td>
+                    <th scope="row">{{ $i + 1 }}</th>
+                    <td>{{ $res['sortedUser'][$i]['name'] }}</td>
+                    <td>{{ $res['sortedUser'][$i]['punkte'] }}</td>
                 </tr>
-                <tr>
-                <th scope="row">2</th>
-                <td>Jonas</td>
-                <td>2</td>
-                </tr>
-                <tr>
-                <th scope="row">3</th>
-                <td>Jan</td>
-                <td>1</td>
-                </tr>
+            @endfor
             </tbody>
             </table>
         </div>
@@ -40,18 +33,18 @@
                 <tr>
                 <th scope="col">Heim</th>
                 <th scope="col">Tipp</th>
-                <th scope="col">Ergebnis</th>
-                <th scope="col">Auswärts</th>
+                <th scope="col">Gast</th>
                 <th scope="col">Datum</th>
-                <th scope="col">Anpfiff</th>
+                <th scope="col">Ort</th>
                 </tr>
             </thead>
             <tbody>
+            @for ($i = 0; $i < count($res['spiele']); $i++)
                 <tr>
                     <td>
                         <div class="row">
                             <div class="col-6">
-                                Senegal
+                                {{ $res['mannschaften'][$res['spiele'][$i]->heim_id - 1]->Name }}
                             </div>
                            
                         </div>
@@ -60,223 +53,38 @@
                     <div class="row">
                         <div class="col-6">
                                 <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="SEN-Tipp">
+                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="{{ $res['mannschaften'][$res['spiele'][$i]->heim_id - 1]->Code }}">
                                 </form>
                         </div>
                         <div class="col-6">
                                 <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="NIE-Tipp">
+                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="{{ $res['mannschaften'][$res['spiele'][$i]->gast_id - 1]->Code }}">
                                 </form>
                         </div>
                     </div>
-                    </td>
-                    <td>
-                       <i> 0:0</i>
                     </td>
                     
                     <td>
                         <div class="row">
                             <div class="col-6">
-                               Niederlande
+                            {{ $res['mannschaften'][$res['spiele'][$i]->gast_id - 1]->Name }}
                             </div>
    
                         </div>
                     </td>
-                    <td>21.11.22</td>
-                    <td>11:00</td>
+                    <td>{{ $res['spiele'][$i]->spielzeit }}</td>
+                    <td>{{ $res['spiele'][$i]->spielort }}</td>
                 </tr>
-                <tr>
-                    <td>
-                        <div class="row">
-                            <div class="col-6">
-                                Katar
-                            </div>
-                           
-                        </div>
-                    </td>
-                    <td>
-                    <div class="row">
-                        <div class="col-6">
-                                <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="KAT-Tipp">
-                                </form>
-                        </div>
-                        <div class="col-6">
-                                <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="ECU-Tipp">
-                                </form>
-                        </div>
-                    </div>
-                    </td>
-                    <td>
-                       <i> 0:0</i>
-                    </td>
-                    <td>
-                        <div class="row">
-                            <div class="col-6">
-                               Ecuador
-                            </div>
-   
-                        </div>
-                    </td>
-                    <td>21.11.22</td>
-                    <td>17:00</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="row">
-                            <div class="col-6">
-                                Katar
-                            </div>
-                           
-                        </div>
-                    </td>
-                    <td>
-                    <div class="row">
-                        <div class="col-6">
-                                <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="KAT-Tipp">
-                                </form>
-                        </div>
-                        <div class="col-6">
-                                <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="ECU-Tipp">
-                                </form>
-                        </div>
-                    </div>
-                    </td>
-                    <td>
-                        <i>0:0</i>
-                    </td>
-                    <td>
-                        <div class="row">
-                            <div class="col-6">
-                               Ecuador
-                            </div>
-   
-                        </div>
-                    </td>
-                    <td>25.11.22</td>
-                    <td>14:00</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="row">
-                            <div class="col-6">
-                                Niederlande
-                            </div>
-                           
-                        </div>
-                    </td>
-                    <td>
-                    <div class="row">
-                        <div class="col-6">
-                                <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="NIE-Tipp">
-                                </form>
-                        </div>
-                        <div class="col-6">
-                                <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="ECU-Tipp">
-                                </form>
-                        </div>
-                    </div>
-                    </td>
-                    <td>
-                        <i>0:0</i>
-                    <td>
-                        <div class="row">
-                            <div class="col-6">
-                               Ecuador
-                            </div>
-   
-                        </div>
-                    </td>
-                    <td>25.11.22</td>
-                    <td>17:00</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="row">
-                            <div class="col-6">
-                                Niederlande
-                            </div>
-                           
-                        </div>
-                    </td>
-                    <td>
-                    <div class="row">
-                        <div class="col-6">
-                                <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="NIE-Tipp">
-                                </form>
-                        </div>
-                        <div class="col-6">
-                                <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="KAT-Tipp">
-                                </form>
-                        </div>
-                    </div>
-                    </td>
-                    <td>
-                        <i>0:0</i>
-                    </td>
-                    <td>
-                        <div class="row">
-                            <div class="col-6">
-                               Katar
-                            </div>
-   
-                        </div>
-                    </td>
-                    <td>29.11.22</td>
-                    <td>16:00</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="row">
-                            <div class="col-6">
-                                Ecuador
-                            </div>
-                           
-                        </div>
-                    </td>
-                    <td>
-                    <div class="row">
-                        <div class="col-6">
-                                <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="ECU-Tipp">
-                                </form>
-                        </div>
-                        <div class="col-6">
-                                <form>
-                                    <input type="number" min="0" class="form-control" id="tippTeam1" aria-describedby="emailHelp" placeholder="SEN-Tipp">
-                                </form>
-                        </div>
-                    </div>
-                    </td>
-                    <td>
-                        <i>0:0</i>
-                    </td>
-                    <td>
-                        <div class="row">
-                            <div class="col-6">
-                               Senegal
-                            </div>
-   
-                        </div>
-                    </td>
-                    <td>29.11.22</td>
-                    <td>16:00</td>
-                </tr>
+            @endfor
             </tbody>
             </table>
 
 
 
             
-            
+            @auth
             <button type="button" class="btn btn-success" style="margin: 0 auto; display: block;">Commit</button>
+            @endauth
         </div>
 
     </div>
