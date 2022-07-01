@@ -20,14 +20,16 @@ Route::get('/', function () {
     $spiele = Spiel::paginate(6);
     $mannschaften = Mannschaft::all();
 
-    $sortedUser = collect(User::all())->sortBy('punkte')->toArray();
+    $user = collect(User::all());
     //dd($sortedUser);
 
     $res = array(
         'spiele' => $spiele,
         'mannschaften' => $mannschaften,
-        'sortedUser' => $sortedUser,
+        'sortedUser' => $user->sortByDesc('punkte')->values(),
     );
+
+    //dd($res);
 
     return view('home', ['res' => $res]);
 });
